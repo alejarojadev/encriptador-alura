@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#0A3871" />
+    <meta
+      name="description"
+      content="Este es el encriptador de texto de Alura, donde podrás intercambiar mensajes secretos con otras personas."
+    />
+    <title>Encriptador de texto - Alura 💬</title>
+    <link rel="icon" href="recursos/step-post-alura.svg" />
+    <link rel="apple-touch-icon" href="recursos/Frame 6.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo-alura" src="recursos/Frame 6.png" alt="logo de alura" />
+    </header>
+    <main>
+      <section class="seccion-text">
+        <textarea
+          class="enter-text"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí"
+          required
+          wrap="soft"
+        ></textarea>
+        <br />
+        <div class="msn-alert">
+          <img
+            src="recursos/bi_exclamation-circle-fill.png"
+            alt=""
+            class="alet-icon"
+          />
+          <h6 class="info-text">
+            Solo se permite ingresar letras minusculas y sin acentos.
+          </h6>
+        </div>
+        <div class="buttons">
+          <button class="btn-encrypt" onclick="botonEncriptar()">
+            Encriptar
+          </button>
+          <button class="btn-decrypt" onclick="botonDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="seccion-msn">
+        <textarea class="message" cols="30" rows="10"></textarea>
+        <div class="texto">
+          <h3>Ningún mensaje fue encontrado</h3>
+          <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
+        </div>
+        <div>
+          <button class="btn-copy" onclick="botonCopiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
